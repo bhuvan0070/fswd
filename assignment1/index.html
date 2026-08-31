@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTT Subscription Picker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .plans {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>OTT Subscription Picker</h1>
+    <p>Choose the best plan for you</p>
+
+    <div class="plans">
+
+        <div class="card">
+            <h2>Basic</h2>
+            <p>Price: ₹199/month</p>
+            <p>Quality: 720p</p>
+            <p>Screens: 1</p>
+        </div>
+
+        <div class="card">
+            <h2>Standard</h2>
+            <p>Price: ₹399/month</p>
+            <p>Quality: 1080p</p>
+            <p>Screens: 2</p>
+        </div>
+
+        <div class="card">
+            <h2>Premium</h2>
+            <p>Price: ₹599/month</p>
+            <p>Quality: 4K</p>
+            <p>Screens: 4</p>
+        </div>
+
+        <div class="card">
+            <h2>Family</h2>
+            <p>Price: ₹799/month</p>
+            <p>Quality: 4K</p>
+            <p>Screens: 6</p>
+        </div>
+
+    </div>
+
+    <a href="signup.html" class="button">Sign Up</a>
+
+</body>
+</html>
