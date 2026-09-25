@@ -1,0 +1,86 @@
+/* style.css — poshtik-campus, site-wide. 86 lines at the end of Lab 3. */
+body
+{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: floralwhite;  /* warm off-white */
+  color: black;
+}
+#page-header  /* the banner rule — an id selector, one element only */
+{
+  background-color: darkslategray;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+h1, h3
+{
+  color: seagreen;  /* the brand green */
+}
+.dish
+{
+  width: 300px;  /* content width; padding + border sit outside it */
+  background-color: mintcream;  /* pale mint */
+  border: 2px solid seagreen;
+  padding: 12px;
+  margin: 12px 0;
+}
+.dish h3
+{
+  font-size: 18px;
+  font-weight: 600;
+}
+nav a
+{
+  color: seagreen;
+  text-decoration: none;
+}
+footer p
+{
+  text-align: center;
+}
+/* ===== Lab 3 · Ex.1 — the nav becomes a bar ===== */
+nav
+{
+  background-color: mintcream;  /* the brand's pale mint */
+  padding: 10px 16px;
+  border-bottom: 2px solid seagreen;
+}
+nav a  /* SECOND nav a rule — the cascade merges, not replaces */
+{
+  margin-right: 18px;
+}
+/* ===== Lab 3 · Ex.2 — the order form joins the brand ===== */
+form
+{
+  background-color: mintcream;
+  border: 2px solid seagreen;
+  padding: 16px;
+  width: 480px;  /* the phone override still wins below 600px */
+}
+legend
+{
+  color: seagreen;  font-weight: 600;
+}
+button
+{
+  background-color: seagreen;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+}
+/* ===== phone layout — the media query MUST stay last ============ */
+@media (max-width: 600px)
+{
+  .dish
+  {
+    width: 100%;  /* was 300px — now the full glass */
+  }
+  form
+  {
+    width: 100%;  /* was 480px — wider than many phones! */
+  }
+  h1
+  {
+    font-size: 22px;  /* headline, not billboard */
+  }
+}
