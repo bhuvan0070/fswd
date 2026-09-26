@@ -68,6 +68,23 @@ button
   border: none;
   padding: 8px 16px;
 }
+
+#order-result
+{
+  white-space: pre-line;  
+  border: 2px solid seagreen;
+  padding: 10px;  max-width: 480px;
+}
+#order-result:empty
+{
+  display: none;  
+}
+#order-result.refused
+{
+  color: red;  border-color: red;
+}
+
+
 /* phone layout — the media query MUST stay last */
 @media (max-width: 600px)
 {
